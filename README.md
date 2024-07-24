@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+# 🌐 Cliente Websocket
+Esse projeto foi desenvolvido com objetivo de testar um servidor WebSocket e as mensagens interceptadas no canal de conexão. Como eu não entendia bem o funcionamento dos WS, 
+decidi desenvolver um cliente do zero para testar o funcionamento do servidor e compreender melhor a lógica de operação dessa tecnologia.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O cliente foi configurado para enviar eventos e mensagens para um server WS. A URL do servidor é definida estaticamente no código, uma mudança futura seria permitir que isso
+fosse definido diretamente na interface.
 
-Currently, two official plugins are available:
+Para **Emitir um evento** deve ser digitado o nome do evento no campo "evento a enviar ou sala para entrar", em seguida, na caixa maior do canto inferior esquerdo, onde lê-se 
+"mensagem a ser enviada", é inserida a mensagem que será enviada junto ao evento. Daí, basta apertar o botão "Enviar Evento"
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para **Ouvir um evento** deve ser digitado o evento que se pretende ouvir na caixa onde lê-se "ouvir evento". Depois, basta clicar o botão "Ouvir Evento".
 
-## Expanding the ESLint configuration
+Os botões "Conectar" e etc são casos especificos que nem vale a pena explicar mais.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<h2><Strong>Interface do cliente WS: </Strong></Strong></h2>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2ed23fee-be89-4698-a537-930f979e40d1" width="800" alt="analise_algoritmos_ordenacao">
+</p>
