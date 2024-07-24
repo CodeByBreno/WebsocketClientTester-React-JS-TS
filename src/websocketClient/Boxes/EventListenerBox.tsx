@@ -13,7 +13,7 @@ const EventListenerBox: React.FC<EventListenerBox> = ({
     <input
       type="text"
       className="inputSend"
-      placeholder="listen to event"
+      placeholder="ouvir evento"
       value={event}
       onChange={handleEventListeningChange}
     />

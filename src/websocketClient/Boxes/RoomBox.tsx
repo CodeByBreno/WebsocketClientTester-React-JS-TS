@@ -10,7 +10,7 @@ const RoomBox: React.FC<RoomBoxProps> = ({ room, handleRoomChange }) => {
     <input
       type="text"
       className="inputSend"
-      placeholder="room to enter or event to send"
+      placeholder="evento a enviar ou sala para entrar"
       value={room}
       onChange={handleRoomChange}
     />

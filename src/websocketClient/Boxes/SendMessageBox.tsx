@@ -12,7 +12,7 @@ const SendMessageBox: React.FC<SendMessageBoxProps> = ({
   return (
     <textarea
       className="sendMessage"
-      placeholder="sendMessage"
+      placeholder="mensagem a ser enviada"
       value={sendMessage}
       onChange={handleSendMessage}
     ></textarea>
